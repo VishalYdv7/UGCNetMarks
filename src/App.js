@@ -13,10 +13,16 @@ const App = () => {
   // Answer key stored directly in the code
   const answerKey = {
     "3421238576": "1",
-    "3421238577": "3",
+    "3421238577": "1",
     "3421238578": "3",
-    "3421238579": "4",
+    "3421238579": "3",
     "3421238580": "2",
+    "3421238581": "1",
+    "3421238582": "DROPPED",
+    "3421238583": "3",
+    "3421238584": "3",
+    "3421238585": "2",
+    "3421238586": "2",
     "3421238726": "2",
     // Add more question IDs and correct answers as needed
   };
@@ -104,7 +110,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1>UGC NET Marks Calculator</h1>
+      <h1>Geography UGC NET Dec 2024 Marks Calculator</h1>
       <p>Step 1: Upload the Response Sheet (PDF)</p>
       <input
         type="file"
@@ -118,7 +124,7 @@ const App = () => {
         Calculate Marks
       </button>
       {marks !== null && (
-        <h2>Your total marks: {marks}</h2>
+        <h1 className="total-marks">Your total marks: {marks}</h1>
       )}
       {parsedResponses.length > 0 && (
         <div>
